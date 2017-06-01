@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 7: REST API</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>My Watchlist
+        <small>Track the movies you want to see</small>
+      </h1>
+
+      <section id="movie-table">
+        <button type="button" class="btn btn-xs btn-success" id="addMovie">
+          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+          Add Movie
+        </button>
+        <table class="table table-condensed table-bordered table-striped">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Director</th>
+              <th>Genre</th>
+              <th>Country</th>
+              <th>Year</th>
+              <th>Runtime</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="movie-table-tbody"></tbody>
+        </table>
+      </section>
+
+      <section>
+        <form id="movie-form">
+          <div class="form-group">
+            <label for="movieTitle"><span class="required-field">* </span>Title:</label>
+            <input type="text" class="form-control input-sm" id="movieTitle" required>
+          </div>
+          <div class="form-group">
+            <label for="movieDirector">Director:</label>
+            <input type="text" class="form-control input-sm" id="movieDirector">
+          </div>
+          <div class="form-group">
+            <label for="movieGenre">Genre:</label>
+            <select class="form-control" id="movieGenre">
+              <option value="">-- Select One --</option>
+              <option value="Action">Action</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Crime">Crime</option>
+              <option value="Drama">Drama</option>
+              <option value="Historical">Historical</option>
+              <option value="Horror">Horror</option>
+              <option value="Political">Political</option>
+              <option value="Romance">Romance</option>
+              <option value="Science fiction">Science fiction</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="movieCountry">Country:</label>
+            <input type="text" class="form-control input-sm" id="movieCountry">
+          </div>
+          <div class="form-group">
+            <label for="movieYear">Year:</label>
+            <input type="number" class="form-control input-sm" id="movieYear" min="0" max="9999" placeholder="yyyy">
+          </div>
+          <div class="form-group">
+            <label for="movieRuntime">Runtime:</label>
+            <input type="text" class="form-control input-sm" id="movieRuntime">
+          </div>
+          <div id="form-buttons">
+            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+            <button type="button" class="btn btn-default btn-sm" id="cancelForm">Cancel</button>
+          </div>
+        </form>
+      </section>
+
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

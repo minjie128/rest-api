@@ -1,0 +1,55 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+section {
+  margin-top: 1rem;
+}
+
+table {
+  margin: 1rem 0;
+  width: 70% !important;
+  min-width: 45rem !important;
+}
+
+#movie-form {
+  display: none;
+}
+
+form label {
+  float: left;
+  padding-top: 0.3rem;
+  margin-right: 0.5rem;
+  font-weight: 500;
+  width: 4rem;
+  text-align: right;
+}
+
+.required-field {
+  font-weight: 600;
+  color: red;
+}
+
+#movieTitle,
+#movieDirector {
+  width: 12rem;
+}
+
+#movieYear {
+  width: 4rem;
+}
+
+#movieGenre,
+#movieCountry,
+#movieRuntime {
+  width: 10rem;
+}
+
+#form-buttons {
+  margin-left: 4.5rem;
+}
